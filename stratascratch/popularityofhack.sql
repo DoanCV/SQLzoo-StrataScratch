@@ -1,2 +1,0 @@
-SELECT facebook_employees.location, AVG(facebook_hack_survey.popularity) FROM facebook_hack_survey JOIN facebook_employees ON facebook_employees.id = facebook_hack_survey.employee_id
-GROUP BY facebook_employees.location
