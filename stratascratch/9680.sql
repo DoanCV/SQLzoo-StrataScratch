@@ -1,0 +1,2 @@
+SELECT forbes_global_2010_2014.company FROM forbes_global_2010_2014
+ORDER BY forbes_global_2010_2014.profits DESC LIMIT 3
