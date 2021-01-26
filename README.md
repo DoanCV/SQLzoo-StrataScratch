@@ -4,7 +4,7 @@ This repository hosts some of my solutions to the problems on the SQLzoo.net sit
 ## MySQL StrataScratch solutions
 I reliazed that there are not many SQL questions labeled "interview". Otherwise, there are plenty of problems which I will try to solve efficiently and post my solutions here. Once I run out of freemium problems, I will use my .edu account for the premium discount.
 
-## Hackrrank SQL solutions
+## Hackerrank SQL solutions
 Most of the easy problems are trivial as certain groups of consecutive problems would only have one basic change between them. I will not post those. Instead, I will post the alternative queries, the medium problems and any problem I liked. Even if some problems were labeled easy, difficulty is relative. I earned the 5 star gold badge for SQL in less than a week while working on StrataScratch problems. Although there are user submissions on StrataScratch, many are not upvoted as the most optimal when compared to Hackerrank. However, they are not the same problems so perhaps StrataScratch can benefit from more publicity. Also, free access on both sites contain about the same number of problems but most of the Hackerrank problems are meant to check fundamentals. Later on, the Hackrrank problems are just poorly worded.
 
 ## Codewars SQL solutions
