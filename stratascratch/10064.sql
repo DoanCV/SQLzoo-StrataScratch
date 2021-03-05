@@ -1,3 +1,5 @@
+--Problem 10064 (Highest Energy Consumption)
+--Find the date with the highest total energy consumption from the Facebook data centers. Output the date along with the total energy consumption across all data centers.
 /* 
 - We have three continents to work with so we will have to add the consumption together to get the total
     - combine original tables with union all, not just union to not lose rows
