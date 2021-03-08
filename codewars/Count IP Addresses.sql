@@ -20,6 +20,7 @@ split_part(first,'.',3) AS thirdFirst -> 3
 and so on then the same thing for lastIPs
 
 use minus sign for subtraction
+type cast the above split_parts to subtract
 SELECT (fourthLast - fourthFirst)*256^0 AS fourthDifference, (thirdLast - thirdFirst)*256^1, and so on 
 */
 
