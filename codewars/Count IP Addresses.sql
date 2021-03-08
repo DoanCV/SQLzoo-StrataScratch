@@ -24,3 +24,10 @@ type cast the above split_parts to subtract
 SELECT (fourthLast - fourthFirst)*256^0 AS fourthDifference, (thirdLast - thirdFirst)*256^1, and so on 
 */
 
+SELECT ip_addresses.id,
+((split_part(ip_addresses.last, '.', 4)::int - split_part(ip_addresses.first, '.', 4)::int) * 256^0 + 
+(split_part(ip_addresses.last, '.', 3)::int - split_part(ip_addresses.first, '.', 3)::int) * 256^1 +
+(split_part(ip_addresses.last, '.', 2)::int - split_part(ip_addresses.first, '.', 2)::int) * 256^2 +
+(split_part(ip_addresses.last, '.', 1)::int - split_part(ip_addresses.first, '.', 1)::int) * 256^3) AS ips_between
+FROM ip_addresses
+
