@@ -101,10 +101,9 @@ The credit limits from customers and prospects are different
 GROUP BY first_name, last_name, old credit_limit
 */
 
-/*
 -- First iteration of my solution, works but runtime error. 
 -- Couldn't figure out why until I saw two things: A special function use or no use of concat() as working solutions
--- Lead me to conclude that concat() is not very efficient
+-- I'm not even using a JOIN. Also, when I tried an accepted solution, I also had a runtime error.
 
 SELECT 
   customers.first_name,
@@ -116,6 +115,4 @@ WHERE CONCAT(LOWER(customers.first_name), ' ', LOWER(customers.last_name)) = LOW
   OR CONCAT(LOWER(customers.last_name), ', ', LOWER(customers.first_name)) = LOWER(prospects.full_name)
 GROUP BY customers.first_name, customers.last_name, old_limit
 HAVING MAX(prospects.credit_limit) > customers.credit_limit
-ORDER BY first_name, last_name
-*/
-
+ORDER BY customers.first_name, customers.last_name
