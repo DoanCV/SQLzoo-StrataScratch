@@ -1,4 +1,6 @@
 /* 
+-- (5 kyu) Simple View
+
 -- Format of a VIEW
 CREATE VIEW name AS
 SELECT ...;
