@@ -11,11 +11,12 @@ seperate by type with GROUP BY
 structure:
 -- divide the result of SUM() and COUNT(1) to get a ratio
 -- SUM() can have CASE WHEN
-SELECT SUM(CASE WHEN processed = TRUE and type = 0 THEN 1 ...) / COUNT(1)
-GROUP BY type 
+SELECT type, SUM(CASE WHEN processed = TRUE THEN 1 ...) / COUNT(1)
+GROUP BY type to determine which type to check CASE and to then SUM
 */
 
-SELECT SUM(CASE 
-    WHEN processed = TRUE AND type = 0 THEN 1 ...) / COUNT(1)
+SELECT "type", SUM(CASE 
+    WHEN processed = TRUE THEN 1
+    ELSE 0 END)::NUMERIC / COUNT(1)
 FROM facebook_complaints
 GROUP BY "type"
